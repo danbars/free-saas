@@ -6,6 +6,14 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Index.vue') }
     ]
+  },
+  {
+    path: '/services/:slug',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Service.vue') }
+    ],
+    props: true
   }
 ]
 

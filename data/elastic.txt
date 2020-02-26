@@ -1,0 +1,44 @@
+{ "index" : { "_index":"services"}}
+{"name": "Google Analytics","slug": "google-analytics","url": "https://analytics.google.com","pricing": "https://marketingplatform.google.com/about/analytics/compare/","labels": [  "analytics"],"description": "Collect, configure, and analyze your data to reach the right audience","logo": "google-analytics.png"}
+{ "index" : { "_index":"services"}}
+{"name": "Mailjet","slug": "mailjet","url": "https://www.mailjet.com","pricing": "https://www.mailjet.com/pricing","labels": [  "email"],"description": "Streamline your emailing and boost your sales with Mailjet. We serve all your email and SMS needs with one simple and powerful service","logo": "mailjet.png"}
+{ "index" : { "_index":"services"}}
+{"name": "UptimeRobot","slug": "uptime-robot","url": "https://www.uptimerobot.com","pricing": "https://www.uptimerobot.com/pricing","labels": [  "monitoring",  "alerts",  "status"],"description": "Downtime Happens. Get Notified! Verifies downtime from multiple locations","logo": "uptime-robot.png"}
+{ "index" : { "_index":"services"}}
+{"name": "Freshping","slug": "freshping","url": "https://www.freshworks.com/website-monitoring/","pricing": "https://www.freshworks.com/website-monitoring/pricing","labels": [  "monitoring",  "alerts",  "status"],"description": "Reliable website uptime monitoring. Monitor 50 URLs • 1-minute interval • 10 Global locations • 5 Public status pages","logo": "freshping.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "ChartMogul","slug": "chart-mogul","url": "https://www.freshworks.com/website-monitoring/","pricing": "https://www.charmogul.com","labels": [  "analytics",  "data",  "subscription"],"description": "Become a subscription leader. The best teams use ChartMogul to drive subscription business growth and turn their companies into industry leaders.","logo": "chartmogul.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Fauna","slug": "fauna","url": "https://www.fauna.com","pricing": "https://www.fauna.com/pricing","labels": [  "database",  "data",  "serverless"],"description": "The database built for serverless, featuring native GraphQL","logo": "fauna.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Spectrum","slug": "spectrum","url": "https://www.spectrum.chat","pricing": "https://www.spectrum.com","labels": [  "community",  "chat"],"description": "The community platform for the future. Spectrum makes it easy to grow safe, successful online communities that are built to last.","logo": "spectrum.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Netlify","slug": "netlify","url": "https://www.netlify.com","pricing": "https://www.netlify.com/pricing/","labels": [  "hosting",  "websites",  "serverless"],"description": "Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more","logo": "netlify.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Zeit","slug": "zeit","url": "https://zeit.co","pricing": "https://zeit.co/pricing","labels": [  "hosting",  "websites",  "serverless"],"description": "ZEIT Now is the perfect fit for deploying static sites and serverless functions.","logo": "zeit.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Stackery","slug": "stackert","url": "https://www.stackery.io","pricing": "https://www.stackery.io/pricing/","labels": [  "serverless"],"description": "Supercharge Development, Delivery and Management of Serverless Applications","logo": "stackery.svg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Loggly","slug": "loggly","url": "https://www.loggly.com","pricing": "https://www.loggly.com/plans-and-pricing","labels": [  "Logs"],"description": "Fast, powerful searching over massive volumes of log data. Fix problems before they become critical.","logo": "loggly.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "logDNA","slug": "logdna","url": "https://www.logdna.com","pricing": "https://www.logdna.com/pricing","labels": [  "Logs"],"description": "Log Management for the Kubernetes Age. Make Your Logs Work for You.logdna","logo": "logdna.svg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Bitrix24","slug": "bitrix24","url": "https://www.bitrix24.com","pricing": "https://www.bitrix24.com/prices","labels": [  "crm",  "websites",  "tasks",  "projects"],"description": "Your company. United. Free. Unlimited. Online.","logo": "bitrix24.svg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Unsplash","slug": "unsplash","url": "https://unsplash.com","pricing": "https://unsplash.com","labels": [  "images",  "stockphoto"],"description": "The internet’s source of freely usable images. Powered by creators everywhere.","logo": "unsplash.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Databox","slug": "databox","url": "https://databox.com","pricing": "https://databox.com/pricing","labels": [  "data",  "analytics"],"description": "Databox pulls all your data into one place, so you can track performance and discover insights in real-time.","logo": "databox.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Trello","slug": "trello","url": "https://trello.com","pricing": "https://trello.com/pricing","labels": [  "projects",  "tasks",  "todo"],"description": "Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible, and rewarding way.","logo": "trello.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Sumo","slug": "sumo","url": "https://sumo.com","pricing": "https://sumo.com/pricing","labels": [  "email",  "marketing",  "newsletter"],"description": "The #1 FREE email capture tool","logo": "sumo.jpg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "HubSpot","slug": "hubspot","url": "https://www.hubspot.com","pricing": "https://www.hubspot.com/pricing/crm","labels": [  "crm",  "marketing",  "forms",  "chat",  "tickets"],"description": "The Free CRM With Something for Everyonehubspoty","logo": "hubspot.svg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Pipedream","slug": "pipedream","url": "https://www.pipedream.com","pricing": "https://www.pipedream.com","labels": [  "integrations",  "workflow"],"description": "Develop any workflow, based on any trigger. Workflows are code, which you can run for free. No server or cloud resources to manage.","logo": "pipedream.jpg","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "ZipBooks","slug": "zipbooks","url": "https://zipbooks.com","pricing": "https://zipbooks.com/pricing/","labels": [  "invoicing",  "billing",  "accounting"],"description": "Simple accounting software that makes you even smarter.","logo": "zipbooks.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Freshdesk","slug": "freshdesk","url": "https://freshdesk.com","pricing": "https://freshdesk.com/pricing","labels": [  "support",  "email",  "chat",  "tickets"],"description": "Affordable and Elegant Omnichannel Helpdesk. Email, chat, phone, social — Be there for your customers, wherever they are!","logo": "freshdesk.png","_index": "services"}
+{ "index" : { "_index":"services"}}
+{"name": "Quickmetrics","slug": "quickmetrics","url": "https://quickmetrics.io","pricing": "https://quickmetrics.io/#pricing","labels": [  "data",  "analytics",  "database"],"description": "Custom metric collection with powerful charting.","logo": "quickmetrics.svg","_index": "services"}

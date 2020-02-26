@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="bg-grey-2">
     <div v-masonry
          transition-duration="0.3s"
          item-selector=".service-card"
@@ -8,7 +8,9 @@
       <div class="row">
         <q-card v-masonry-tile class="service-card q-ma-md" v-for="service in services" :key="service.slug">
           <q-card-section align="center">
-            <img :src="'statics/logos/'+service.logo" class="logo q-ma-sm">
+            <q-btn flat unelevated :to="'/services/'+service.slug">
+              <img :src="'statics/logos/'+service.logo" class="logo q-ma-sm">
+            </q-btn>
             <div class="text-h6">{{service.name}}</div>
             <div class="text-subtitle2">
               <q-chip clickable color="grey" outline v-for="label in service.labels" :key="label">{{label}}</q-chip>
@@ -16,7 +18,7 @@
           </q-card-section>
           <q-separator />
           <q-card-actions align="around">
-            <q-btn flat label="Read more" color="primary"/>
+            <q-btn flat label="Read more" color="primary" :to="'/services/'+service.slug"/>
             <q-btn flat icon-right="open_in_new" label="Visit" @click="visit(service.url)" />
           </q-card-actions>
           <q-separator inset />
