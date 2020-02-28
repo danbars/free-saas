@@ -5,10 +5,11 @@
         <div class="text-h6 q-my-md">Feed the monster. Add a service.</div>
         <blockquote class="text-overtext q-my-md text-blue-6 text-weight-medium">Qualified services are those that are offered in Software-as-a-Service model, have a free tier (and not just free trial), and are useful for more than just development phase</blockquote>
         <q-form
-          action="https://google.com"
+          action="https://www.form-data.com/_functions/submit/ptcsz435k2rqatafroapc"
           method="post"
           ref="addServiceForm"
           autocomplete="off"
+          @submit="submitForm"
         >
           <q-input
             v-model="serviceName"
@@ -115,8 +116,8 @@ export default {
       // we just need to hide dialog
       this.hide()
     },
-    submitForm () {
-      this.$refs.addServiceForm.submit()
+    submitForm (evt) {
+      evt.target.submit()
     }
   }
 }

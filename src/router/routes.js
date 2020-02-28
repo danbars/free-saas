@@ -16,6 +16,14 @@ const routes = [
       { path: '', component: () => import('pages/Service.vue') }
     ],
     props: true
+  },
+  {
+    path: '/added',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/ServiceAdded.vue') }
+    ],
+    props: true
   }
 ]
 

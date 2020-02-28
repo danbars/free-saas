@@ -30,7 +30,7 @@
       </q-card>
     </div>
     <div class="gitter-panel">
-      <iframe class="gitter-frame" src="https://gitter.im/gitterHQ/gitter/~embed" frameborder="0"></iframe>
+      <iframe class="gitter-frame" :src="gitter" frameborder="0"></iframe>
     </div>
   </q-page>
 </template>
@@ -52,6 +52,9 @@ export default {
   computed: {
     service: function () {
       return services.find(s => s.slug === this.$route.params.slug)
+    },
+    gitter: function () {
+      return `https://gitter.im/free-saas/${this.service.slug}/~embed`
     }
   },
   methods: {

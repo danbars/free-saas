@@ -83,7 +83,14 @@ export default {
   .service-card {
     width: 100%;
     max-width: 250px;
+    /*transition: all 0.1s ease-out;*/
   }
+  .service-card:hover {
+    transition: all 0.1s ease-out;
+    transform: scale(1.03);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+  }
+
   @media (max-width: 480px) {
     .service-card {
       height: auto;
