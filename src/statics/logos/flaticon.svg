@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="flaticon.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata
+     id="metadata34">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1450"
+     inkscape:window-height="845"
+     id="namedview32"
+     showgrid="false"
+     inkscape:zoom="1.9169866"
+     inkscape:cx="13.369902"
+     inkscape:cy="100"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs6">
+    <path
+       id="quipa"
+       d="M320 2521v-200h200v200z" />
+    <path
+       id="quipb"
+       d="M412.5 2424.43h8.31l7.38-12.29h-23.13l-7.56-12.6h38.37l7.38-12.29h-56.69a6.22 6.22 0 0 0-5.25 9.36l33.44 55.27a6.14 6.14 0 0 0 5.25 3 6.14 6.14 0 0 0 5.25-3l1.94-3.18z" />
+    <path
+       id="quipc"
+       d="M442.5 2399.54h14.38l1.8-3a6.07 6.07 0 0 0 .07-6.17 6.1 6.1 0 0 0-5.38-3.12h-3.5z" />
+    <path
+       id="quipd"
+       d="M439 2405.4l-15.62 25.89 7.13 11.85 22.87-37.74z" />
+  </defs>
+  <g
+     id="g28">
+    <g
+       transform="translate(-320 -2321)"
+       id="g10">
+      <use
+         xlink:href="#quipa"
+         id="use8"
+         fill="#0d2a47" />
+    </g>
+    <g
+       transform="translate(-320 -2321)"
+       id="g26">
+      <g
+         id="g14">
+        <use
+           xlink:href="#quipb"
+           id="use12"
+           transform="matrix(1.6241333,0,0,1.6241333,-262.14109,-1511.0671)"
+           style="fill:#ffffff"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" />
+      </g>
+      <g
+         id="g24">
+        <g
+           id="g18">
+          <use
+             xlink:href="#quipc"
+             id="use16"
+             transform="matrix(1.6241333,0,0,1.6241333,-262.14109,-1511.0671)"
+             style="fill:#69e781"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g22">
+          <use
+             xlink:href="#quipd"
+             id="use20"
+             transform="matrix(1.6241333,0,0,1.6241333,-262.14109,-1511.0671)"
+             style="fill:#69e781"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

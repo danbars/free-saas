@@ -10,15 +10,16 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs"
+    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs",
+    "serve": "quasar dev"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
-    "quasar": "^1.0.0",
+    "@quasar/extras": "^1.5.2",
+    "quasar": "^1.9.5",
     "vue-masonry": "^0.11.8"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.0",
+    "@quasar/app": "^1.6.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",

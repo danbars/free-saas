@@ -246,5 +246,45 @@
     "description": "Custom metric collection with powerful charting.",
     "freeplan": "Up to 10,000 events/day and total of 5 metrics",
     "logo": "quickmetrics.svg"
+  },
+  {
+    "name": "FlatIcon",
+    "slug": "flaticon",
+    "url": "https://www.flaticon.com/",
+    "pricing": "https://www.github.com/pricing",
+    "labels": [ "icons", "design" ],
+    "description": "Access more than 2,535,000 icons",
+    "freeplan": "Attribution required. Not all icons are available.",
+    "logo": "flaticon.svg"
+  },
+  {
+    "name": "Github",
+    "slug": "github",
+    "url": "https://www.github.com/",
+    "pricing": "https://github.com/pricing",
+    "labels": [ "code", "git" ],
+    "description": "Development platform where you can host and review code, manage projects, and build software",
+    "freeplan": "Unlimited repositories, 3 collaborators per private repo, 500MB storage",
+    "logo": "github.png"
+  },
+  {
+    "name": "Github Pages",
+    "slug": "github-pages",
+    "url": "https://pages.github.com/",
+    "pricing": "https://www.flaticon.com/pricing",
+    "labels": [ "hosting", "websites" ],
+    "description": "Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live",
+    "freeplan": "One per user, and one per open source project.",
+    "logo": "github.png"
+  },
+  {
+    "name": "Uploadcare",
+    "slug": "uploadcare",
+    "url": "https://uploadcare.com",
+    "pricing": "https://uploadcare.com/pricing",
+    "labels": [ "images", "upload" ],
+    "description": "Serve ultimate UX with better images on any website. One script to rule them all.",
+    "freeplan": "1GB traffic/month, unlimited transformations, image CDN, uploader widget",
+    "logo": "uploadcare.png"
   }
 ]

@@ -1,18 +1,18 @@
 <template>
   <q-layout view="lHr LpR fFf">
-
     <q-header bordered class="bg-blue-grey-10 text-white">
       <q-toolbar>
         <q-toolbar-title >
-          <q-img src="~assets/free-saas-logo.svg" class="logo q-mx-sm"></q-img>
-          <span class="text-h5 q-my-none q-mr-md">Free SaaS</span>
-          <span class="text-subtitle1 q-mt-none text-italic">Services that offer a plan with no monthly fee.</span>
+          <q-img src="~assets/monster.svg" class="logo q-mx-sm" ></q-img>
+          <span class="text-h5 q-my-none q-mr-md text-yellow-5">Free SaaS Monster</span>
+          <span class="text-subtitle1 q-mt-none text-italic gt-xs">Services that offer a plan with no monthly fee.</span>
         </q-toolbar-title>
-        <q-input dark v-model="search" @blur="searching=false" @focus="searching=true" rounded standout clearable type="search" placeholder="Search" class="search-bar q-ma-md" :style="searchbar">
-          <template v-slot:append>
-            <q-icon name="search" />
-          </template>
-        </q-input>
+        <!--<q-input dark v-model="search" @blur="searching=false" @focus="searching=true" rounded standout clearable type="search" placeholder="Search" class="search-bar q-ma-md" :style="searchbar">-->
+          <!--<template v-slot:append>-->
+            <!--<q-icon name="search" />-->
+          <!--</template>-->
+        <!--</q-input>-->
+        <q-btn dense flat round icon="add_box" @click="addService" />
         <q-btn dense flat round icon="eco" @click="right = !right" />
       </q-toolbar>
       <!--<q-toolbar>-->
@@ -24,9 +24,9 @@
       <!--</q-toolbar>-->
     </q-header>
 
-    <q-drawer :width="350" v-model="left" side="left" bordered class="chat-panel">
-      <!-- drawer content -->
-    </q-drawer>
+    <!--<q-drawer :width="350" v-model="left" side="left" bordered class="chat-panel">-->
+      <!--<iframe class="gitter-frame" src="https://gitter.im/gitterHQ/gitter/~embed" frameborder="0"></iframe>-->
+    <!--</q-drawer>-->
     <q-drawer v-model="right" side="right" bordered>
       <q-list>
         <q-item-label header>
@@ -52,6 +52,8 @@
 </template>
 
 <script>
+import AddService from '../components/AddService.vue'
+
 export default {
   data () {
     return {
@@ -62,23 +64,28 @@ export default {
       services: [
         {
           name: 'Google analytics',
-          category: 'Web analytics'
+          category: 'Web analytics',
+          slug: 'google-analytics'
         },
         {
           name: 'Form-Data',
-          category: 'Forms backend'
+          category: 'Forms backend',
+          slug: 'form-data'
         },
         {
-          name: 'Airtable',
-          category: 'Collaborative database'
+          name: 'FlatIcon',
+          category: 'SVG Logo',
+          slug: 'flaticon'
         },
         {
           name: 'Github pages',
-          category: 'Web hosting'
+          category: 'Web hosting',
+          slug: 'github-pages'
         },
         {
           name: 'Github',
-          category: 'Code version control'
+          category: 'Code version control',
+          slug: 'github'
         }
       ]
     }
@@ -86,6 +93,20 @@ export default {
   computed: {
     searchbar () {
       return { width: this.searching ? 250 + 'px' : '150px' }
+    }
+  },
+  methods: {
+    addService: function () {
+      this.$q.dialog({
+        component: AddService,
+        parent: this
+      }).onOk(() => {
+        console.log('OK')
+      }).onCancel(() => {
+        console.log('Cancel')
+      }).onDismiss(() => {
+        console.log('Called on OK or Cancel')
+      })
     }
   }
 }
@@ -95,7 +116,12 @@ export default {
     transition: all 0.3s ease-out;
   }
   .logo {
-    height: 30px;
-    width: 30px;
+    height: 46px;
+    width: 46px;
+  }
+  .gitter-frame {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
 </style>
