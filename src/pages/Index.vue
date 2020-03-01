@@ -44,11 +44,12 @@ export default {
   components: {
   },
   data () {
-    return {
-      viewModel: 'list'
-    }
+    return {}
   },
   computed: {
+    viewModel () {
+      return this.$q.platform.is.mobile ? 'card' : 'list'
+    },
     services () {
       if (!this.tag) {
         return services

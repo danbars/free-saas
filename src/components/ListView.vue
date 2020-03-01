@@ -20,10 +20,10 @@
           </div>
           <q-space></q-space>
           <q-card-actions vertical class="actions-section">
-            <q-btn flat dense round icon="pageview" color="primary" :to="'/services/'+service.slug">
+            <q-btn unelevated dense round icon="chevron_right" :to="'/services/'+service.slug">
               <q-tooltip anchor="center left" self="center right">Read more</q-tooltip>
             </q-btn>
-            <q-btn flat dense round icon="open_in_new" @click="visit(service.url)" >
+            <q-btn unelevated dense round icon="open_in_new" @click="visit(service.url)" >
               <q-tooltip anchor="center left" self="center right">Website</q-tooltip>
             </q-btn>
           </q-card-actions>

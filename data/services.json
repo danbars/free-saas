@@ -132,7 +132,7 @@
     "slug": "loggly",
     "url": "https://www.loggly.com",
     "pricing": "https://www.loggly.com/plans-and-pricing",
-    "labels": ["Logs"],
+    "labels": ["logs"],
     "description": "Fast, powerful searching over massive volumes of log data. Fix problems before they become critical.",
     "freeplan": "single user, up to 250MB/day",
     "logo": "loggly.png"
@@ -142,7 +142,7 @@
     "slug": "logdna",
     "url": "https://www.logdna.com",
     "pricing": "https://www.logdna.com/pricing",
-    "labels": ["Logs"],
+    "labels": ["logs"],
     "description": "Log Management for the Kubernetes Age. Make Your Logs Work for You.logdna",
     "freeplan": "",
     "logo": "logdna.svg"
