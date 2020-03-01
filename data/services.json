@@ -125,7 +125,7 @@
     "labels": ["serverless"],
     "description": "Supercharge Development, Delivery and Management of Serverless Applications",
     "freeplan": "",
-    "logo": "stackery.svg"
+    "logo": "stackery.png"
   },
   {
     "name": "Loggly",
@@ -286,5 +286,25 @@
     "description": "Serve ultimate UX with better images on any website. One script to rule them all.",
     "freeplan": "1GB traffic/month, unlimited transformations, image CDN, uploader widget",
     "logo": "uploadcare.png"
+  },
+  {
+    "name": "Begin",
+    "slug": "begin",
+    "url": "https://begin.com",
+    "pricing": "https://begin.com",
+    "labels": [ "hosting", "serverless", "database", "apps" ],
+    "description": "Begin is a ridiculously quick platform for building modern web apps, sites, & APIs.",
+    "freeplan": "5 apps, shared resources, 1 developer, limited usage (according to AWS free tier)",
+    "logo": "begin.png"
+  },
+  {
+    "name": "Hexometer",
+    "slug": "hexometer",
+    "url": "https://hexometer.com",
+    "pricing": "https://hexometer.com/pricing",
+    "labels": [ "monitoring", "alerts", "status" ],
+    "description": "All-in-one Tool that Continuously Monitors & Reports 2800+ Data Points",
+    "freeplan": "1 website, 10,000 URLs, 5 min scan frequency",
+    "logo": "hexometer.png"
   }
 ]

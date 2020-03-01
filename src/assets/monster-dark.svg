@@ -13,7 +13,7 @@
    class=""
    version="1.1"
    id="svg13"
-   sodipodi:docname="monster.svg"
+   sodipodi:docname="monster-dark.svg"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    inkscape:export-filename="/Users/danbs/dev/dan/free-saas/src/assets/monster-dark.png"
    inkscape:export-xdpi="75"
@@ -64,7 +64,7 @@
          data-old_color="#000000"
          fill="#FFFFFF"
          id="path2"
-         style="fill:#ffffff;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1" />
       <path
          d="M39,14a2.991,2.991,0,0,0-2.817,1.984A2.817,2.817,0,0,0,36,17a3,3,0,0,0,3,3,2.963,2.963,0,0,0,1.373-.334A3,3,0,0,0,39,14Z"
          data-original="#000000"
@@ -72,7 +72,7 @@
          data-old_color="#000000"
          fill="#FFFFFF"
          id="path4"
-         style="fill:#ffffff;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1" />
       <path
          d="M39,22a4.9,4.9,0,0,1-4.943-5.653A8.766,8.766,0,0,0,32,16.1a8.922,8.922,0,1,0,8.306,5.721A5.024,5.024,0,0,1,39,22Zm-7,5a2,2,0,1,1,2-2A2,2,0,0,1,32,27Z"
          data-original="#000000"
@@ -80,7 +80,7 @@
          data-old_color="#000000"
          fill="#FFFFFF"
          id="path6"
-         style="fill:#ffffff;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1" />
       <path
          d="M48.061,40.3a1,1,0,0,1-.225-1.507,21,21,0,1,0-26.336,4.4,1,1,0,0,1,.5.866V47a2,2,0,0,0,4,0,1,1,0,0,1,2,0v6a2,2,0,0,0,4,0V49a1,1,0,0,1,2,0,2,2,0,0,0,4,0V46a1,1,0,0,1,2,0,2,2,0,0,0,4,0V45a1,1,0,0,1,1-1h2a2,2,0,0,0,1.061-3.7ZM42.089,20.917a10.879,10.879,0,1,1-7.374-6.472,4.991,4.991,0,1,1,7.374,6.472Z"
          data-original="#000000"
@@ -88,7 +88,7 @@
          data-old_color="#000000"
          fill="#FFFFFF"
          id="path8"
-         style="fill:#ffffff;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1" />
     </g>
   </g>
 </svg>

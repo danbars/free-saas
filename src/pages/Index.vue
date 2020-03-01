@@ -1,54 +1,52 @@
 <template>
   <q-page class="bg-grey-2">
-    <q-toolbar class="bg-blue-grey-7" v-if="tag">
-      <q-breadcrumbs class="text-yellow-4" active-color="white">
+    <q-toolbar class="bg-blue-grey-7" >
+      <q-btn icon="filter_list" flat round color="white" @click="showFilter"></q-btn>
+      <q-separator dark vertical inset class="q-mx-md gt-sm" ></q-separator>
+      <q-btn-toggle
+        v-model="viewModel"
+        class="view-toggle gt-sm"
+        size="md"
+        rounded
+        unelevated
+        color="blue-grey-7"
+        text-color="white"
+        toggle-color="white"
+        toggle-text-color="black"
+        :options="[
+          {icon: 'dashboard', value: 'cards'},
+          {icon: 'view_list', value: 'list'}
+        ]"
+      />
+      <q-separator dark vertical inset class="q-mx-md" v-if="tag"/>
+      <q-breadcrumbs class="text-yellow-4" active-color="white" v-if="tag">
         <q-breadcrumbs-el label="Home" icon="home" to="/" />
         <q-breadcrumbs-el :label="tag"  />
       </q-breadcrumbs>
-      <q-separator dark vertical inset class="q-mx-md" v-if="relatedTags.length"/>
-      <q-toolbar-section>
-        <span class="text-caption text-white" v-if="relatedTags.length">Related:</span>
-        <q-btn rounded outlined dense clickable color="white" size="sm" outline v-for="label in relatedTags" :key="'related-'+label" :to="'/tags/'+label" class="q-px-sm q-ml-sm service-label">{{label}}</q-btn>
-      </q-toolbar-section>
-    </q-toolbar>
-    <div v-masonry
-         transition-duration="0.3s"
-         item-selector=".service-card"
-         class="masonry-container"
-    >
-      <div class="row">
-        <q-card v-masonry-tile class="service-card q-ma-md" v-for="service in services" :key="service.slug">
-          <q-card-section align="center">
-            <q-btn flat unelevated :to="'/services/'+service.slug">
-              <img :src="'statics/logos/'+service.logo" class="logo q-ma-sm">
-            </q-btn>
-            <div class="text-h6">{{service.name}}</div>
-            <div class="text-subtitle2">
-              <q-btn rounded outlined dense clickable color="grey" size="sm" outline v-for="label in service.labels" :key="label" :to="'/tags/'+label" class="q-px-sm q-mt-sm service-label">{{label}}</q-btn>
-              <!--<q-chip clickable color="grey" outline v-for="label in service.labels" :key="label" :to="'/tags/'+label">{{label}}</q-chip>-->
-            </div>
-          </q-card-section>
-          <q-separator />
-          <q-card-actions align="around">
-            <q-btn flat label="Read more" color="primary" :to="'/services/'+service.slug"/>
-            <q-btn flat icon-right="open_in_new" label="Visit" @click="visit(service.url)" />
-          </q-card-actions>
-          <q-separator inset />
-          <q-card-section >
-            {{ service.description }}
-          </q-card-section>
-        </q-card>
+      <q-separator dark vertical inset class="q-mx-md gt-sm" v-if="relatedTags.length && tag"/>
+      <div v-if="relatedTags.length" class="gt-sm">
+        <span class="text-caption text-white">Related:</span>
+        <q-btn rounded outlined dense clickable color="white" size="sm" outline v-for="label in relatedTags" :key="'related-'+label" :to="'/tags/'+label" class="q-px-sm service-label">{{label}}</q-btn>
       </div>
-    </div>
+    </q-toolbar>
+    <component :is="viewComponent" :services="services"></component>
   </q-page>
 </template>
 
 <script>
 import services from '../../data/services.json'
+import FilterPanel from '../components/FilterPanel.vue'
+import CardView from '../components/CardView.vue'
+import ListView from '../components/ListView.vue'
+
 export default {
   name: 'PageIndex',
+  components: {
+  },
   data () {
-    return {}
+    return {
+      viewModel: 'cards'
+    }
   },
   computed: {
     services () {
@@ -62,50 +60,40 @@ export default {
     },
     relatedTags () {
       if (!this.tag) {
-        return null
+        return []
       }
       const allTags = []
       this.services.map(s => s.labels).forEach(a => allTags.push(...a))
       const o = {}
       allTags.forEach(i => { if (i !== this.tag) { o[i] = i } })
       return Object.keys(o).sort()
+    },
+    viewComponent () {
+      return this.viewModel === 'cards' ? CardView : ListView
     }
   },
   methods: {
-    visit (url) {
-      window.open(url + '?ref=free-saas', '_blank')
+    showFilter () {
+      this.$q.dialog({
+        component: FilterPanel,
+        parent: this
+      }).onOk(() => {
+        console.log('OK')
+      }).onCancel(() => {
+        console.log('Cancel')
+      }).onDismiss(() => {
+        console.log('Called on OK or Cancel')
+      })
     }
   }
 }
 </script>
 
 <style scoped>
-  .service-card {
-    width: 100%;
-    max-width: 250px;
-    /*transition: all 0.1s ease-out;*/
+  .view-toggle {
+    border: 1px solid white;
   }
-  .service-card:hover {
-    transition: all 0.1s ease-out;
-    transform: scale(1.03);
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
-  }
-
-  @media (max-width: 480px) {
-    .service-card {
-      height: auto;
-      width: calc(100% - 32px);
-      max-width: inherit;
-    }
-  }
-
-  .logo {
-    max-height: 50px;
-    max-width: 170px;
-    width: auto;
-    height: auto;
-  }
-  .service-label:not(:last-of-type) {
-    margin-right: 8px;
+  .service-label {
+    margin: 3px 4px;
   }
 </style>

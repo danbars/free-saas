@@ -1,16 +1,49 @@
 <template>
-  <q-dialog ref="dialog" @hide="onDialogHide" persistent seamless position="left" full-height>
-    <iframe class="gitter-frame" src="https://gitter.im/gitterHQ/gitter/~embed" frameborder="0"></iframe>
+  <q-dialog ref="dialog" @hide="onDialogHide" position="left" full-height>
+    <q-card>
+      <q-list>
+        <q-item-label header>Filter</q-item-label>
+        <q-item dense v-for="(count, tag) in tags" :key="'sidebar-filter-'+tag">
+          <q-btn flat :label="tag" :to="'/tags/'+tag">
+            <q-badge class="q-ml-sm">{{count}}</q-badge>
+          </q-btn>
+        </q-item>
+      </q-list>
+    </q-card>
   </q-dialog>
 </template>
 
 <script>
+import services from '../../data/services.json'
+
 export default {
-  name: 'GitterPanel',
+  name: 'FilterPanel',
   props: {
     // ...your custom props
   },
-
+  computed: {
+    tags () {
+      const tags = {}
+      services.forEach(s => {
+        (s.labels || []).forEach(l => {
+          if (tags[l]) {
+            tags[l]++
+          } else {
+            tags[l] = 1
+          }
+        })
+      })
+      // sort the object by inserting the keys by order
+      const keys = Object.keys(tags).sort()
+      const retTags = {
+        All: services.length
+      }
+      keys.forEach(k => {
+        retTags[k] = tags[k]
+      })
+      return retTags
+    }
+  },
   methods: {
     // following method is REQUIRED
     // (don't change its name --> "show")
