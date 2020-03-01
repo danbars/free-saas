@@ -4,7 +4,7 @@
       <q-list>
         <q-item-label header>Filter</q-item-label>
         <q-item dense v-for="(count, tag) in tags" :key="'sidebar-filter-'+tag">
-          <q-btn flat :label="tag" :to="'/tags/'+tag">
+          <q-btn flat :label="tag" :to="tag === 'All' ? '/' : '/tags/'+tag">
             <q-badge class="q-ml-sm">{{count}}</q-badge>
           </q-btn>
         </q-item>
