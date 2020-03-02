@@ -44,12 +44,11 @@ export default {
   components: {
   },
   data () {
-    return {}
+    return {
+      viewModel: 'list'
+    }
   },
   computed: {
-    viewModel () {
-      return this.$q.platform.is.mobile ? 'card' : 'list'
-    },
     services () {
       if (!this.tag) {
         return services
@@ -85,6 +84,11 @@ export default {
       }).onDismiss(() => {
         console.log('Called on OK or Cancel')
       })
+    }
+  },
+  mounted () {
+    if (this.$q.platform.is.mobile) {
+      this.viewModel = 'cards'
     }
   }
 }
