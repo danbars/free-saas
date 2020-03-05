@@ -3,6 +3,7 @@
     <q-card class="bg-white add-service-card">
       <q-card-section>
         <div class="text-h6 q-my-md">Feed the monster. Add a service.</div>
+        <div class="text-overtext text-red-6 text-weight-bolder">Please read:</div>
         <blockquote class="text-overtext q-my-md text-blue-6 text-weight-medium">Qualified services are those that are offered in Software-as-a-Service model, have a free tier (and not just free trial), and are useful for more than just development phase</blockquote>
         <q-form
           action="https://www.form-data.com/_functions/submit/ptcsz435k2rqatafroapc"
@@ -12,7 +13,18 @@
           @submit="submitForm"
         >
           <q-input
+            v-model="email"
+            filled
+            class="q-mb-sm"
+            name="email"
+            label="Your email"
+            hint="Optional. Only if you want to get notified when your service is added."
+          />
+
+          <q-input
             v-model="serviceName"
+            filled
+            class="q-mb-sm"
             name="serviceName"
             label="Service Name"
             lazy-rules
@@ -21,6 +33,8 @@
 
           <q-input
             type="url"
+            filled
+            class="q-mb-sm"
             v-model="url"
             name="url"
             label="Service home page"
@@ -31,6 +45,8 @@
 
           <q-input
             type="url"
+            filled
+            class="q-mb-sm"
             v-model="pricingUrl"
             name="pricingUrl"
             label="Service pricing page"
@@ -41,6 +57,8 @@
 
           <q-input
             v-model="description"
+            filled
+            class="q-mb-sm"
             name="description"
             label="Short description"
             hint="You can copy the tag line from the website"
@@ -50,6 +68,8 @@
 
           <q-input
             v-model="freeplan"
+            filled
+            class="q-mb-sm"
             name="freeplan"
             label="Main benefits of free plan"
             hint="Copy the main benefits from the free-plan benefits page"
@@ -59,20 +79,14 @@
 
           <q-input
             v-model="nexttier"
+            filled
+            class="q-mb-sm"
             name="nexttier"
             label="What is the price of the next paid tier"
           />
-
-          <q-input
-            v-model="email"
-            name="email"
-            label="Your email"
-            hint="Not mandatory. Only if you want to get notified when your service is added (or rejected)"
-          />
-
           <div class="q-mt-md">
             <q-btn label="Submit" type="submit" color="primary" />
-            <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+            <q-btn label="Cancel" color="primary" flat class="q-ml-sm" @click="hide" />
           </div>
         </q-form>
       </q-card-section>
