@@ -10,8 +10,9 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs",
-    "serve": "quasar dev"
+    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs; cp ./CNAME ./docs",
+    "serve": "quasar dev",
+    "deploy": "git add *; git commit -m \"deploy\"; git push"
   },
   "dependencies": {
     "@quasar/extras": "^1.5.2",

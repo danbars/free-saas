@@ -57,6 +57,19 @@
             :rules="[ val => val && val.length > 0 || 'Please type something']"
           />
 
+          <q-input
+            v-model="nexttier"
+            name="nexttier"
+            label="What is the price of the next paid tier"
+          />
+
+          <q-input
+            v-model="email"
+            name="email"
+            label="Your email"
+            hint="Not mandatory. Only if you want to get notified when your service is added (or rejected)"
+          />
+
           <div class="q-mt-md">
             <q-btn label="Submit" type="submit" color="primary" />
             <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
@@ -79,7 +92,9 @@ export default {
       url: '',
       pricingUrl: '',
       description: '',
-      freeplan: ''
+      freeplan: '',
+      nexttier: '',
+      email: ''
     }
   },
   methods: {
