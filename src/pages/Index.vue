@@ -2,22 +2,22 @@
   <q-page class="bg-grey-2">
     <q-toolbar class="bg-blue-grey-7" >
       <q-btn icon="filter_list" flat round color="white" @click="showFilter"></q-btn>
-      <q-separator dark vertical inset class="q-mx-md gt-sm" ></q-separator>
-      <q-btn-toggle
-        v-model="viewModel"
-        class="view-toggle gt-sm"
-        size="md"
-        rounded
-        unelevated
-        color="blue-grey-7"
-        text-color="white"
-        toggle-color="white"
-        toggle-text-color="black"
-        :options="[
-          {icon: 'dashboard', value: 'cards'},
-          {icon: 'view_list', value: 'list'}
-        ]"
-      />
+      <!--<q-separator dark vertical inset class="q-mx-md gt-sm" ></q-separator>-->
+      <!--<q-btn-toggle-->
+        <!--v-model="viewModel"-->
+        <!--class="view-toggle gt-sm"-->
+        <!--size="md"-->
+        <!--rounded-->
+        <!--unelevated-->
+        <!--color="blue-grey-7"-->
+        <!--text-color="white"-->
+        <!--toggle-color="white"-->
+        <!--toggle-text-color="black"-->
+        <!--:options="[-->
+          <!--{icon: 'dashboard', value: 'cards'},-->
+          <!--{icon: 'view_list', value: 'list'}-->
+        <!--]"-->
+      <!--/>-->
       <q-separator dark vertical inset class="q-mx-md" v-if="tag"/>
       <q-breadcrumbs class="text-yellow-4" active-color="white" v-if="tag">
         <q-breadcrumbs-el label="Home" icon="home" to="/" />
@@ -29,19 +29,21 @@
         <q-btn rounded outlined dense clickable color="white" size="sm" outline v-for="label in relatedTags" :key="'related-'+label" :to="'/tags/'+label" class="q-px-sm service-label">{{label}}</q-btn>
       </div>
     </q-toolbar>
-    <component :is="viewComponent" :services="services"></component>
+    <!--<component :is="viewComponent" :services="services"></component>-->
+    <list-view :services="services"></list-view>
   </q-page>
 </template>
 
 <script>
 import services from '../../data/services.json'
 import FilterPanel from '../components/FilterPanel.vue'
-import CardView from '../components/CardView.vue'
+// import CardView from '../components/CardView.vue'
 import ListView from '../components/ListView.vue'
 
 export default {
   name: 'PageIndex',
   components: {
+    ListView
   },
   data () {
     return {
@@ -67,10 +69,10 @@ export default {
       const o = {}
       allTags.forEach(i => { if (i !== this.tag) { o[i] = i } })
       return Object.keys(o).sort()
-    },
-    viewComponent () {
-      return this.viewModel === 'cards' ? CardView : ListView
     }
+    //    viewComponent () {
+    //      return this.viewModel === 'cards' ? CardView : ListView
+    //    }
   },
   methods: {
     showFilter () {
@@ -84,11 +86,6 @@ export default {
       }).onDismiss(() => {
         console.log('Called on OK or Cancel')
       })
-    }
-  },
-  mounted () {
-    if (this.$q.platform.is.mobile) {
-      this.viewModel = 'cards'
     }
   }
 }

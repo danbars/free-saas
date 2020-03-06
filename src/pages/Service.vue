@@ -27,11 +27,18 @@
           </div>
           {{ service.freeplan }}
         </q-card-section>
+        <q-separator inset v-if="service.nexttier" />
+        <q-card-section v-if="service.nexttier">
+          <div class="text-overline">
+            Next tier
+          </div>
+          {{ service.nexttier }}
+        </q-card-section>
       </q-card>
     </div>
-    <div class="gitter-panel">
-      <iframe class="gitter-frame" :src="gitter" frameborder="0"></iframe>
-    </div>
+    <!--<div class="gitter-panel">-->
+      <!--<iframe class="gitter-frame" :src="gitter" frameborder="0"></iframe>-->
+    <!--</div>-->
   </q-page>
 </template>
 

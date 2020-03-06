@@ -6,7 +6,7 @@
   >
     <div class="row">
       <q-card v-masonry-tile class="service-card q-ma-md" v-for="service in services" :key="service.slug">
-        <q-card-section horizontal >
+        <q-card-section horizontal>
           <q-btn flat unelevated :to="'/services/'+service.slug">
             <img :src="'statics/logos/'+service.logo" class="logo q-ma-sm">
           </q-btn>
@@ -15,12 +15,13 @@
           </div>
           <q-space></q-space>
           <q-card-actions class="actions-section">
-            <q-btn flat rounded color="white" class="bg-primary q-px-sm" label="Visit" icon-right="open_in_new" @click="visit(service.url)" >
+            <q-btn v-if="$q.screen.gt.sm" flat rounded color="white" class="bg-primary q-px-sm" label="Visit" icon-right="open_in_new" @click="visit(service.url)" >
               <q-tooltip>Visit website</q-tooltip>
             </q-btn>
-            <q-btn flat rounded label="more" color="white" class="bg-grey-6"  icon-right="chevron_right" :to="'/services/'+service.slug" >
-              <q-tooltip>Read more</q-tooltip>
-            </q-btn>
+            <q-btn v-if="$q.screen.lt.md?true:false" flat round color="white" class="bg-primary" icon="open_in_new" @click="visit(service.url)" />
+            <!--<q-btn flat round dense color="white" class="bg-grey-6"  icon="chevron_right" :to="'/services/'+service.slug" >-->
+              <!--<q-tooltip>Read more</q-tooltip>-->
+            <!--</q-btn>-->
 
           </q-card-actions>
         </q-card-section>
