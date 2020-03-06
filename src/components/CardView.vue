@@ -25,6 +25,11 @@
         <q-card-section >
           {{ service.description }}
         </q-card-section>
+        <q-separator inset v-if="service.freeplan"/>
+        <q-card-section v-if="service.freeplan">
+          <div class="text-overline">Free tier:</div>
+          {{ service.freeplan }}
+        </q-card-section>
       </q-card>
     </div>
   </div>

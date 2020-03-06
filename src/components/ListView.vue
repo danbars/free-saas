@@ -10,27 +10,46 @@
           <q-btn flat unelevated :to="'/services/'+service.slug">
             <img :src="'statics/logos/'+service.logo" class="logo q-ma-sm">
           </q-btn>
-          <q-separator vertical inset class="q-mr-md" />
-          <div class="text-left card-main-wrapper">
-            <div class="text-subtitle1">{{service.name}}</div>
-            <div class="text-subtitle2">
+          <div class="text-h6 card-main-wrapper">
+            {{service.name}}
+          </div>
+          <q-space></q-space>
+          <q-card-actions class="actions-section">
+            <q-btn flat rounded color="white" class="bg-primary q-px-sm" label="Visit" icon-right="open_in_new" @click="visit(service.url)" >
+              <q-tooltip>Visit website</q-tooltip>
+            </q-btn>
+            <q-btn flat rounded label="more" color="white" class="bg-grey-6"  icon-right="chevron_right" :to="'/services/'+service.slug" >
+              <q-tooltip>Read more</q-tooltip>
+            </q-btn>
+
+          </q-card-actions>
+        </q-card-section>
+        <q-card-section>
+          <div class="q-ml-sm">
+            <div class="text-subtitle1">
               <q-btn rounded outlined dense clickable color="grey" size="sm" outline v-for="label in service.labels" :key="label" :to="'/tags/'+label" class="q-px-sm service-label">{{label}}</q-btn>
-              <!--<q-chip clickable color="grey" outline v-for="label in service.labels" :key="label" :to="'/tags/'+label">{{label}}</q-chip>-->
             </div>
           </div>
           <q-space></q-space>
-          <q-card-actions vertical class="actions-section">
-            <q-btn unelevated dense round icon="chevron_right" :to="'/services/'+service.slug">
-              <q-tooltip anchor="center left" self="center right">Read more</q-tooltip>
-            </q-btn>
-            <q-btn unelevated dense round icon="open_in_new" @click="visit(service.url)" >
-              <q-tooltip anchor="center left" self="center right">Website</q-tooltip>
-            </q-btn>
-          </q-card-actions>
+          <!--<div class="on-right">-->
+            <!--<span class="text-bold">Added:</span>-->
+            <!--{{ formattedDate(service.added) }}-->
+          <!--</div>-->
         </q-card-section>
         <q-separator />
-        <q-card-section >
+        <q-card-section class="text-body1">
           {{ service.description }}
+        </q-card-section>
+        <q-separator inset v-if="service.freeplan || service.nexttier"/>
+        <q-card-section v-if="service.freeplan || service.nexttier">
+          <div  v-if="service.freeplan">
+            <span class="text-bold">Free tier:</span>
+            {{ service.freeplan }}
+          </div>
+          <div  v-if="service.nexttier">
+            <span class="text-bold">Next tier:</span>
+            {{ service.nexttier }}
+          </div>
         </q-card-section>
       </q-card>
     </div>
@@ -49,6 +68,13 @@ export default {
   methods: {
     visit (url) {
       window.open(url + '?ref=free-saas', '_blank')
+    },
+    formattedDate (date) {
+      const d = new Date(date)
+      const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+      const mo = new Intl.DateTimeFormat('en', { month: 'long' }).format(d)
+      const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+      return `${mo} ${da}, ${ye}`
     }
   }
 }
