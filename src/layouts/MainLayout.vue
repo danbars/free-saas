@@ -3,7 +3,9 @@
     <q-header bordered class="bg-blue-grey-10 text-white">
       <q-toolbar>
         <q-toolbar-title >
-          <q-img src="~assets/monster.svg" class="logo q-mx-sm" ></q-img>
+          <q-btn flat unelevated dense to="/">
+            <img src="~assets/monster.svg" class="logo q-mx-sm" />
+          </q-btn>
           <span class="text-h5 q-my-none q-mr-md text-yellow-5">Free SaaS Monster</span>
           <span class="text-subtitle1 q-mt-none text-italic gt-xs">Services that offer a plan with no monthly fee.</span>
         </q-toolbar-title>
