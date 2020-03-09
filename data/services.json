@@ -417,5 +417,53 @@
     "logo": "sanity.png",
     "nexttier": "$199/project/month",
     "added": "2020-03-06T00:00:00Z"
+  },
+  {
+    "name": "Cloudinary",
+    "slug": "cloudinary",
+    "url": "https://cloudinary.com",
+    "pricing": "https://cloudinary.com/pricing",
+    "labels": [ "cdn", "images", "video"],
+    "description": "Manage, optimize, and deliver images and videos at scale",
+    "freeplan": "1 user, 10MB max image size, 100MB max video size, 25 credits/month (1 credit = 1K transformations / 1GB storage / 1GB view",
+    "logo": "cloudinary.png",
+    "nexttier": "$89/month",
+    "added": "2020-03-06T00:00:00Z"
+  },
+  {
+    "name": "Backblaze",
+    "slug": "backblaze",
+    "url": "https://www.backblaze.com/b2/cloud-storage.html",
+    "pricing": "https://www.backblaze.com/b2/cloud-storage-pricing.html",
+    "labels": [ "storage"],
+    "description": "Cloud storage that's astonishingly easy and low-cost",
+    "freeplan": "Product is completely free. No limits",
+    "logo": "backblaze.png",
+    "nexttier": "Pay as you grow - storage: $0.005/GB/month, download: $0.01/GB/month",
+    "added": "2020-03-06T00:00:00Z"
+  },
+  {
+    "name": "Yandex AppMetrica",
+    "slug": "yandex-appmetrica",
+    "url": "https://appmetrica.yandex.com/about/",
+    "pricing": "https://appmetrica.yandex.com/about/pricing",
+    "labels": [ "app analytics", "push notifications", "crash reports"],
+    "description": "The all-in-one install attribution, app analytics and marketing platform. Free & unlimited.",
+    "freeplan": "Unlimited data, unlimited retention",
+    "logo": "appmetrica.png",
+    "nexttier": "Free product. No paid tier.",
+    "added": "2020-03-06T00:00:00Z"
+  },
+  {
+    "name": "Yandex Metrica",
+    "slug": "yandex-metrica",
+    "url": "https://metrica.yandex.com/about/",
+    "pricing": "https://metrica.yandex.com/about/info/pricing",
+    "labels": [ "web analytics", "reports"],
+    "description": "From traffic trends to mouse movements – get a comprehensive understanding of your online audience and drive business growth.",
+    "freeplan": "Unlimited data, unlimited retention",
+    "logo": "metrica.png",
+    "nexttier": "Free product. No paid tier.",
+    "added": "2020-03-06T00:00:00Z"
   }
 ]

@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 64 64"
-   width="512px"
-   height="512px"
+   viewBox="0 0 57 57"
+   width="456"
+   height="456"
    class=""
    version="1.1"
    id="svg13"
@@ -41,54 +41,59 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1086"
-     inkscape:window-height="678"
+     inkscape:window-width="1369"
+     inkscape:window-height="827"
      id="namedview15"
      showgrid="false"
-     inkscape:zoom="0.97900689"
-     inkscape:cx="249.57608"
-     inkscape:cy="256"
-     inkscape:window-x="0"
+     inkscape:zoom="0.85721556"
+     inkscape:cx="55.388479"
+     inkscape:cy="232"
+     inkscape:window-x="71"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg13" />
+     inkscape:current-layer="svg13"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <g
-     id="g11">
+     id="g11"
+     transform="translate(-3.4967936,-4.0023078)">
     <g
        id="monster-6"
        data-name="monster">
       <path
-         d="M45,58a3,3,0,0,1-6,0c0-1.66,3-5,3-5S45,56.34,45,58Z"
+         d="m 45,58 a 3,3 0 0 1 -6,0 c 0,-1.66 3,-5 3,-5 0,0 3,3.34 3,5 z"
          data-original="#000000"
          class="active-path"
          data-old_color="#000000"
-         fill="#FFFFFF"
          id="path2"
-         style="fill:#253238;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1"
+         inkscape:connector-curvature="0" />
       <path
-         d="M39,14a2.991,2.991,0,0,0-2.817,1.984A2.817,2.817,0,0,0,36,17a3,3,0,0,0,3,3,2.963,2.963,0,0,0,1.373-.334A3,3,0,0,0,39,14Z"
+         d="M 39,14 A 2.991,2.991 0 0 0 36.183,15.984 2.817,2.817 0 0 0 36,17 3,3 0 0 0 39,20 2.963,2.963 0 0 0 40.373,19.666 3,3 0 0 0 39,14 Z"
          data-original="#000000"
          class="active-path"
          data-old_color="#000000"
-         fill="#FFFFFF"
          id="path4"
-         style="fill:#253238;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1"
+         inkscape:connector-curvature="0" />
       <path
-         d="M39,22a4.9,4.9,0,0,1-4.943-5.653A8.766,8.766,0,0,0,32,16.1a8.922,8.922,0,1,0,8.306,5.721A5.024,5.024,0,0,1,39,22Zm-7,5a2,2,0,1,1,2-2A2,2,0,0,1,32,27Z"
+         d="M 39,22 A 4.9,4.9 0 0 1 34.057,16.347 8.766,8.766 0 0 0 32,16.1 8.922,8.922 0 1 0 40.306,21.821 5.024,5.024 0 0 1 39,22 Z m -7,5 a 2,2 0 1 1 2,-2 2,2 0 0 1 -2,2 z"
          data-original="#000000"
          class="active-path"
          data-old_color="#000000"
-         fill="#FFFFFF"
          id="path6"
-         style="fill:#253238;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1"
+         inkscape:connector-curvature="0" />
       <path
-         d="M48.061,40.3a1,1,0,0,1-.225-1.507,21,21,0,1,0-26.336,4.4,1,1,0,0,1,.5.866V47a2,2,0,0,0,4,0,1,1,0,0,1,2,0v6a2,2,0,0,0,4,0V49a1,1,0,0,1,2,0,2,2,0,0,0,4,0V46a1,1,0,0,1,2,0,2,2,0,0,0,4,0V45a1,1,0,0,1,1-1h2a2,2,0,0,0,1.061-3.7ZM42.089,20.917a10.879,10.879,0,1,1-7.374-6.472,4.991,4.991,0,1,1,7.374,6.472Z"
+         d="M 48.061,40.3 A 1,1 0 0 1 47.836,38.793 21,21 0 1 0 21.5,43.193 1,1 0 0 1 22,44.059 V 47 a 2,2 0 0 0 4,0 1,1 0 0 1 2,0 v 6 a 2,2 0 0 0 4,0 v -4 a 1,1 0 0 1 2,0 2,2 0 0 0 4,0 v -3 a 1,1 0 0 1 2,0 2,2 0 0 0 4,0 v -1 a 1,1 0 0 1 1,-1 h 2 a 2,2 0 0 0 1.061,-3.7 z M 42.089,20.917 a 10.879,10.879 0 1 1 -7.374,-6.472 4.991,4.991 0 1 1 7.374,6.472 z"
          data-original="#000000"
          class="active-path"
          data-old_color="#000000"
-         fill="#FFFFFF"
          id="path8"
-         style="fill:#253238;fill-opacity:1" />
+         style="fill:#253238;fill-opacity:1"
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
