@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs; cp ./CNAME ./docs; cp ./src/statics/sitemap.xml ./docs",
+    "build": "quasar build; rm -rf ./docs; cp -r ./dist/spa ./docs; cp ./CNAME ./docs; mv ./docs/statics/sitemap.xml ./docs",
     "serve": "quasar dev",
     "deploy": "git add *; git commit -m \"deploy\"; git push"
   },

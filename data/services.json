@@ -465,5 +465,29 @@
     "logo": "metrica.png",
     "nexttier": "Free product. No paid tier.",
     "added": "2020-03-06T00:00:00Z"
+  },
+  {
+    "name": "FreeGeoIP",
+    "slug": "freegeoip",
+    "url": "https://freegeoip.app/",
+    "pricing": "https://freegeoip.app/",
+    "labels": [ "geolocation", "ip"],
+    "description": "Free GEO data resolved from IP address",
+    "freeplan": "15,000 requests / hour",
+    "logo": "freegeoip.png",
+    "nexttier": "Free product. No paid tier.",
+    "added": "2020-03-10T00:00:00Z"
+  },
+  {
+    "name": "FraudLabs Pro",
+    "slug": "fraudlabs-pro",
+    "url": "https://www.fraudlabspro.com",
+    "pricing": "https://www.fraudlabspro.com/pricing",
+    "labels": [ "fraud prevention", "payments"],
+    "description": "Protect your business from online fraud",
+    "freeplan": "500 queries/month, 5 validation rules, no grouping rules",
+    "logo": "fraudlabs-pro.jpg",
+    "nexttier": "$29.95/month",
+    "added": "2020-03-11T00:00:00Z"
   }
 ]
