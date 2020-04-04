@@ -36,7 +36,7 @@
         </q-item-label>
         <template v-for="service in services">
           <q-separator inset :key="'SERVICE.'+service.name" />
-          <q-item clickable v-ripple :key="service.name">
+          <q-item clickable v-ripple :key="service.name" :to="'/services/'+service.slug">
             <q-item-section>
               <q-item-label lines="1">{{service.name}}</q-item-label>
               <q-item-label caption>{{service.category}}</q-item-label>
@@ -65,9 +65,9 @@ export default {
       search: '',
       services: [
         {
-          name: 'Google analytics',
+          name: 'Yandex metrica',
           category: 'Web analytics',
-          slug: 'google-analytics'
+          slug: 'yandex-metrica'
         },
         {
           name: 'Form-Data',

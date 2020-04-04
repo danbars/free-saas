@@ -28,7 +28,7 @@
     "slug": "auth0",
     "url": "https://auth0.com",
     "pricing": "https://auth0.com/pricing",
-    "labels": ["authentication", "identity", "authorization"],
+    "labels": ["authentication", "identity", "authorization", "user management"],
     "description": "Rapidly integrate authentication and authorization for web, mobile, and legacy applications so you can focus on your core business",
     "freeplan": "Hosted free for development SSO. Up to 2 social identity providers for closed-source projects.",
     "logo": "auth0.jpeg",
@@ -128,7 +128,7 @@
     "description": "Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more",
     "freeplan": "100 GB data and 100 GB/month bandwidth",
     "logo": "netlify.png",
-    "nexttier": "45/month",
+    "nexttier": "$45/month",
     "added": "2020-02-25T00:00:00Z"
   },
   {
@@ -140,7 +140,7 @@
     "description": "ZEIT Now is the perfect fit for deploying static sites and serverless functions.",
     "freeplan": "SSL, 20GB bandwidth, 100 deployments",
     "logo": "zeit.png",
-    "nexttier": "20/month",
+    "nexttier": "$20/month",
     "added": "2020-02-25T00:00:00Z"
   },
   {
@@ -479,6 +479,18 @@
     "added": "2020-03-10T00:00:00Z"
   },
   {
+    "name": "IpList",
+    "slug": "iplist",
+    "url": "https://iplist.cc",
+    "pricing": "https://iplist.cc",
+    "labels": [ "geolocation", "ip", "tor", "spam"],
+    "description": "Free GEO data, tor and spam resolved from IP address",
+    "freeplan": "Fair use policy. if you send thousands of requests per second for multiple minutes the API will return an error.",
+    "logo": "iplist.jpg",
+    "nexttier": "Free product. No paid tier.",
+    "added": "2020-03-11T00:00:00Z"
+  },
+  {
     "name": "FraudLabs Pro",
     "slug": "fraudlabs-pro",
     "url": "https://www.fraudlabspro.com",
@@ -489,5 +501,125 @@
     "logo": "fraudlabs-pro.jpg",
     "nexttier": "$29.95/month",
     "added": "2020-03-11T00:00:00Z"
+  },
+  {
+    "name": "Microlink",
+    "slug": "microlink",
+    "url": "https://www.microlink.io",
+    "pricing": "https://microlink.io/#pricing",
+    "labels": [ "testing", "automation", "performance"],
+    "description": "Browser as API - browser automation built for businesses and developers",
+    "freeplan": "100 requests/day",
+    "logo": "microlink.jpg",
+    "nexttier": "€24/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "OCR Space",
+    "slug": "ocr-space",
+    "url": "https://ocr.space",
+    "pricing": "https://ocr.space/OCRAPI",
+    "labels": [ "ocr", "images", "pdf"],
+    "description": "OCR API - extract text from images and PDFs",
+    "freeplan": "25K requests/month",
+    "logo": "ocr-space.png",
+    "nexttier": "$24.95/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "ReleaseFlags",
+    "slug": "releaseflags",
+    "url": "https://releaseflags.com",
+    "pricing": "https://releaseflags.com/pricing",
+    "labels": [ "ci", "development"],
+    "description": "Feature flags - keep shipping, even when your code is not ready for all your customers",
+    "freeplan": "single user, unlimited applications, unlimited feature flags, API access, 3 environments",
+    "logo": "releaseflags.png",
+    "nexttier": "$9/user/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "NETdepot",
+    "slug": "netdepot",
+    "url": "https://netdepot.com/cdn/",
+    "pricing": "https://netdepot.com/cdn/",
+    "labels": [ "cdn", "cache", "streaming" ],
+    "description": "Content delivery network",
+    "freeplan": "100GB free/month",
+    "logo": "netdepot.jpg",
+    "nexttier": "5¢/GB above the free tier",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "Ably",
+    "slug": "ably",
+    "url": "https://www.ably.io/",
+    "pricing": "https://www.ably.io/pricing",
+    "labels": [ "realtime", "messaging", "pub/sub", "push notifications" ],
+    "description": "Ably provides APIs to simplify and overcome the complex aspects of the most demanding realtime engineering - Pub/sub, push notifications, protocol adapters, integrations, and more",
+    "freeplan": "3m messages/month, 100 peak connections, 100 peak channels",
+    "logo": "ably.png",
+    "nexttier": "$49.99/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "Backendless",
+    "slug": "backendless",
+    "url": "https://backendless.com/",
+    "pricing": "https://backendless.com/pricing/",
+    "labels": [ "mbaas", "database", "user management", "push notifications", "codeless", "serverless", "apps" ],
+    "description": "Codeless, serverless, and API service solutions for your mobile backend needs",
+    "freeplan": "1m API calls/month, 5 database tables, 50k push notifications",
+    "logo": "backendless.png",
+    "nexttier": "$15/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "image4io",
+    "slug": "image4io",
+    "url": "https://image4.io",
+    "pricing": "https://image4.io/en/pricing",
+    "labels": [ "images", "cdn" ],
+    "description": "Image storage, CDN, transformation and optimization",
+    "freeplan": "25 credits/month. 1 credit = 1GB CDN or 1GB storage or 1000 transformations",
+    "logo": "image4io.png",
+    "nexttier": "$40/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "CloudImage",
+    "slug": "cloudimage",
+    "url": "https://www.cloudimage.io",
+    "pricing": "https://www.cloudimage.io/en/pricing",
+    "labels": [ "images", "cdn" ],
+    "description": "Effortless image resizing, optimization and CDN delivery",
+    "freeplan": "25GB image cache, 25GB/month traffic",
+    "logo": "cloudimage.png",
+    "nexttier": "€29/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "short.io",
+    "slug": "short.io",
+    "url": "https://short.io",
+    "pricing": "https://short.io/pricing",
+    "labels": [ "url shortener", "analytics" ],
+    "description": "Shorten links using your own domain",
+    "freeplan": "1 seat, 3 domains, 1000 links, unlimited redirects, 50k tracked clicks",
+    "logo": "shortio.jpg",
+    "nexttier": "$20/month",
+    "added": "2020-04-04T00:00:00Z"
+  },
+  {
+    "name": "DID",
+    "slug": "did",
+    "url": "https://did.app",
+    "pricing": "https://did.app/#pricing",
+    "labels": [ "user management", "authentication", "identity" ],
+    "description": "Authentication for websites and apps that users will love",
+    "freeplan": "1K users, unlimited apps",
+    "logo": "did.png",
+    "nexttier": "$29/month",
+    "added": "2020-04-04T00:00:00Z"
   }
 ]
