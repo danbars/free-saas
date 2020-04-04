@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     visit (url) {
-      window.open(url + '?ref=free-saas', '_blank')
+      window.open(url + '?ref=freesaas.monster', '_blank')
     },
     formattedDate (date) {
       const d = new Date(date)
@@ -115,6 +115,7 @@ export default {
     max-width: 980px;
     margin: 0 auto;
     position: relative;
+    transform: translateY(50px);
   }
   .card-main-wrapper {
     align-self: center;

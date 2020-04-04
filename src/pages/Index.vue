@@ -1,6 +1,6 @@
 <template>
   <q-page class="bg-grey-2">
-    <q-toolbar class="bg-blue-grey-7" >
+    <q-toolbar class="bg-blue-grey-7 fixed filter-toolbar" >
       <q-btn icon="filter_list" flat round color="white" @click="showFilter"></q-btn>
       <!--<q-separator dark vertical inset class="q-mx-md gt-sm" ></q-separator>-->
       <!--<q-btn-toggle-->
@@ -97,5 +97,8 @@ export default {
   }
   .service-label {
     margin: 3px 4px;
+  }
+  .filter-toolbar {
+    z-index: 5;
   }
 </style>

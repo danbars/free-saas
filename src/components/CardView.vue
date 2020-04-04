@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     visit (url) {
-      window.open(url + '?ref=free-saas', '_blank')
+      window.open(url + '?ref=freesaas.monster', '_blank')
     }
   }
 }
