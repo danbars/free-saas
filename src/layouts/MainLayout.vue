@@ -14,7 +14,7 @@
             <!--<q-icon name="search" />-->
           <!--</template>-->
         <!--</q-input>-->
-        <q-btn dense flat round icon="add_box" @click="addService" />
+        <q-btn class="q-px-sm" dense outline rounded label="Add site" icon="add" @click="addService" />
         <q-btn dense flat round icon="eco" @click="right = !right" />
       </q-toolbar>
       <!--<q-toolbar>-->

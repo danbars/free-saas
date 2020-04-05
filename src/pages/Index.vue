@@ -1,7 +1,7 @@
 <template>
   <q-page class="bg-grey-2">
     <q-toolbar class="bg-blue-grey-7 fixed filter-toolbar" >
-      <q-btn icon="filter_list" flat round color="white" @click="showFilter"></q-btn>
+      <q-btn icon="filter_list" outline rounded label="Filter" color="white" @click="showFilter"></q-btn>
       <!--<q-separator dark vertical inset class="q-mx-md gt-sm" ></q-separator>-->
       <!--<q-btn-toggle-->
         <!--v-model="viewModel"-->
